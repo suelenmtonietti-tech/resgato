@@ -309,6 +309,32 @@
   .split .lojista .btn-outline{border-color:var(--creme);color:var(--creme);}
   @media (max-width:720px){.split{grid-template-columns:1fr;}}
 
+  /* ---------- PLANS (empresa) ---------- */
+  .plans-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px;}
+  .plan-card{
+    background:var(--verde-mais-escuro);
+    border:1.5px solid var(--linha);
+    border-radius:20px;
+    padding:28px 26px;
+  }
+  .plan-card.pro{border-color:var(--amarelo);}
+  .plan-tag{
+    display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:12px;
+    padding:5px 12px;border-radius:100px;margin-bottom:14px;
+    background:rgba(244,238,221,0.1);color:rgba(244,238,221,0.75);
+  }
+  .plan-card.pro .plan-tag{background:var(--amarelo);color:var(--verde-mais-escuro);}
+  .plan-card h3{font-family:'Anton',sans-serif;font-size:26px;color:var(--creme);margin-bottom:8px;}
+  .plan-card.pro h3{color:var(--amarelo);}
+  .plan-desc{font-size:14px;color:rgba(244,238,221,0.7);margin:0 0 18px;line-height:1.5;}
+  .plan-card ul{list-style:none;margin:0;padding:0;}
+  .plan-card li{
+    padding:9px 0;border-top:1px solid var(--linha);
+    font-size:14px;line-height:1.5;color:rgba(244,238,221,0.85);
+  }
+  .plan-card li:first-child{border-top:none;}
+  @media (max-width:720px){.plans-grid{grid-template-columns:1fr;}}
+
   /* ---------- SOCIAL PROOF / COUNTER ---------- */
   .counter-wrap{
     display:flex;align-items:center;gap:28px;flex-wrap:wrap;
@@ -471,13 +497,13 @@
       </div>
       <div class="step">
         <div class="num">3</div>
-        <h4>Mostre o QR Code</h4>
-        <p>Na hora de pagar, é só mostrar seu código. O lojista escaneia e pronto.</p>
+        <h4>Escaneie o QR da loja</h4>
+        <p>Chegou lá? A empresa já tem o QR code dela. É só escanear — sem precisar mostrar nada seu.</p>
       </div>
       <div class="step">
         <div class="num">4</div>
-        <h4>Cashback na conta</h4>
-        <p>O dinheiro e os pontos caem na hora. Você acompanha tudo no seu extrato.</p>
+        <h4>Resgate na hora</h4>
+        <p>Cashback cai na conta, selo soma no cartão ou você entra no sorteio — depende do que a loja escolheu oferecer.</p>
       </div>
     </div>
 
@@ -488,6 +514,39 @@
       <div class="chip">👕 Moda</div>
       <div class="chip">💪 Academia</div>
       <div class="chip">🏠 Casa</div>
+    </div>
+  </div>
+</section>
+
+<div class="ticket-divider"></div>
+
+<section class="section-verde-escuro">
+  <div class="wrap">
+    <span class="eyebrow-pill">Cada empresa escolhe a sua</span>
+    <h2 class="section-title">Nem toda loja quer dar<br>cashback. E tudo bem.</h2>
+    <p class="section-lead">A empresa cadastra o benefício do jeito que fizer mais sentido pro negócio dela — você só resgata.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">💰</div>
+        <h4>Cashback</h4>
+        <p>Uma porcentagem da compra volta pra você na hora, direto no saldo do app.</p>
+      </div>
+      <div class="step">
+        <div class="num">🏷️</div>
+        <h4>Selos</h4>
+        <p>Junte selo a cada resgate e troque por brinde quando completar a cartela.</p>
+      </div>
+      <div class="step">
+        <div class="num">📊</div>
+        <h4>Total acumulado</h4>
+        <p>Quanto mais você gasta na loja, mais perto fica do próximo benefício.</p>
+      </div>
+      <div class="step">
+        <div class="num">🎁</div>
+        <h4>Sorteio</h4>
+        <p>Cada resgate vira um número da sorte pra concorrer a prêmios da loja.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -521,6 +580,30 @@
           <li>✅ Condições especiais pra quem entrar como parceiro fundador</li>
         </ul>
         <a href="#hero-form" class="btn-outline" onclick="document.getElementById('email-input').focus()">Cadastrar meu negócio</a>
+      </div>
+    </div>
+
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="plan-tag">Básico</div>
+        <h3>Grátis</h3>
+        <p class="plan-desc">Pra começar a aparecer no mapa e resgatar com QR code, sem gastar nada.</p>
+        <ul>
+          <li>✅ Página da empresa visível no mapa</li>
+          <li>✅ QR code de resgate próprio</li>
+          <li>✅ 1 tipo de benefício ativo por vez</li>
+        </ul>
+      </div>
+      <div class="plan-card pro">
+        <div class="plan-tag">Pro / Premium</div>
+        <h3>Plano pago</h3>
+        <p class="plan-desc">Pra quem quer entender o cliente e ter mais formas de fidelizar.</p>
+        <ul>
+          <li>✅ Analytics: quem resgatou, quando e quanto</li>
+          <li>✅ Cartões de cupom personalizado com a sua marca</li>
+          <li>✅ Mais de um tipo de benefício ao mesmo tempo</li>
+          <li>✅ Envio de mensagem direto pro cliente no app</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -577,7 +660,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q">Como funciona o cashback na prática? <span class="icon">+</span></button>
-        <div class="faq-a"><p>Você compra na loja parceira, mostra seu QR Code na hora de pagar, e o cashback cai automaticamente na sua conta dentro do app — visível no seu extrato, igual um saldo de verdade.</p></div>
+        <div class="faq-a"><p>Você compra na loja parceira e escaneia o QR code que a empresa gerou. Se o benefício dela for cashback, o valor cai automaticamente na sua conta dentro do app — visível no seu extrato, igual um saldo de verdade.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Tenho uma empresa. Como entro como parceiro? <span class="icon">+</span></button>
