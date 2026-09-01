@@ -6,93 +6,93 @@
 <title>Termos de Serviço — Resgatô</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#16233F;
-    --verde:#16233F;
-    --verde-escuro:#101A30;
-    --verde-mais-escuro:#0A1220;
-    --creme:#F4EEDD;
-    --amarelo:#D4AF37;
-    --pink:#9C2B41;
-    --pink-escuro:#7A2032;
-    --coral:#B5453B;
-    --linha:rgba(244,238,221,0.14);
+    --bg:#F8F1F9;
+    --bg-alt:#EEE1F8;
+    --surface:#FFFFFF;
+    --ink:#1D1730;
+    --ink-soft:rgba(29,23,48,0.70);
+    --purple:#5A4780;
+    --purple-dark:#3E3159;
+    --purple-light:#E0D1FB;
+    --charcoal:#232227;
+    --divider:rgba(29,23,48,0.10);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--verde);
-    color:var(--creme);
+    background:var(--bg);
+    color:var(--ink);
     font-family:'Plus Jakarta Sans',sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:0.5px;line-height:1;margin:0;text-transform:uppercase;}
-  h2{font-size:22px;color:var(--amarelo);margin:44px 0 14px;}
-  a{color:var(--amarelo);}
+  h1,h2{font-family:'Baloo 2',sans-serif;font-weight:800;letter-spacing:0;line-height:1.1;margin:0;}
+  h2{font-size:21px;color:var(--purple);margin:42px 0 14px;}
+  a{color:var(--purple);}
   img{display:block;max-width:100%;}
-  :focus-visible{outline:3px solid var(--amarelo);outline-offset:3px;}
+  :focus-visible{outline:3px solid var(--purple);outline-offset:3px;}
 
   .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
 
   nav{
     position:sticky;top:0;z-index:50;
-    background:var(--verde-mais-escuro);
-    border-bottom:1px solid var(--linha);
+    background:rgba(248,241,249,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--divider);
   }
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1120px;margin:0 auto;}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;max-width:1120px;margin:0 auto;}
   .logo{display:flex;align-items:center;gap:9px;}
-  .logo-mark-img{height:40px;width:auto;border-radius:9px;box-shadow:0 3px 10px rgba(0,0,0,0.25);}
+  .logo-mark-img{height:52px;width:auto;border-radius:12px;box-shadow:0 4px 14px rgba(90,71,128,0.25),0 0 0 2px var(--purple-light);}
   .back-link{
     font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;
-    color:var(--creme);text-decoration:none;
-    display:flex;align-items:center;gap:6px;opacity:0.85;
+    color:var(--purple-dark);text-decoration:none;
+    display:flex;align-items:center;gap:6px;
   }
-  .back-link:hover{opacity:1;}
+  .back-link:hover{color:var(--purple);}
 
   header.hero{
-    padding:56px 0 30px;
-    background:radial-gradient(circle at 85% 12%, rgba(212,175,55,0.14), transparent 45%), var(--verde);
+    padding:52px 0 28px;
+    background:radial-gradient(circle at 88% 8%, rgba(90,71,128,0.10), transparent 45%), var(--bg);
   }
   .eyebrow-pill{
     display:inline-block;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:13px;
-    background:var(--pink);color:var(--creme);padding:6px 14px;border-radius:100px;margin-bottom:16px;
+    background:var(--purple-light);color:var(--purple-dark);padding:6px 14px;border-radius:100px;margin-bottom:16px;
   }
-  header.hero h1{font-size:clamp(30px,5vw,46px);color:var(--creme);}
-  header.hero .updated{font-size:13.5px;color:rgba(255,248,234,0.6);margin-top:14px;font-family:'Baloo 2',sans-serif;}
+  header.hero h1{font-size:clamp(28px,4.6vw,42px);color:var(--ink);}
+  header.hero .updated{font-size:13.5px;color:var(--ink-soft);margin-top:14px;font-family:'Baloo 2',sans-serif;}
 
   main{padding:8px 0 60px;}
-  p{font-size:15.5px;line-height:1.7;color:rgba(255,248,234,0.88);margin:0 0 14px;}
+  p{font-size:15.5px;line-height:1.7;color:var(--ink-soft);margin:0 0 14px;}
   ul{margin:0 0 14px;padding-left:22px;}
-  li{font-size:15.5px;line-height:1.7;color:rgba(255,248,221,0.88);margin-bottom:8px;}
-  strong{color:var(--creme);}
+  li{font-size:15.5px;line-height:1.7;color:var(--ink-soft);margin-bottom:8px;}
+  strong{color:var(--ink);}
   .toc{
-    background:var(--verde-mais-escuro);
-    border:1.5px dashed var(--amarelo);
+    background:var(--surface);
+    box-shadow:0 4px 20px rgba(29,23,48,0.06);
     border-radius:16px;padding:22px 26px;margin:28px 0 10px;
   }
-  .toc p{margin-bottom:10px;font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--amarelo);font-size:14px;text-transform:uppercase;letter-spacing:0.5px;}
+  .toc p{margin-bottom:10px;font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--purple);font-size:14px;}
   .toc ol{margin:0;padding-left:20px;}
-  .toc li{margin-bottom:6px;}
-  .toc a{text-decoration:none;color:rgba(255,248,234,0.85);font-size:14.5px;}
-  .toc a:hover{color:var(--amarelo);}
+  .toc li{margin-bottom:6px;color:var(--ink-soft);}
+  .toc a{text-decoration:none;color:var(--ink-soft);font-size:14.5px;}
+  .toc a:hover{color:var(--purple);}
 
   .contact-box{
-    background:var(--verde-mais-escuro);
-    border:1.5px solid var(--linha);
+    background:var(--charcoal);color:#fff;
     border-radius:18px;padding:26px 28px;margin-top:36px;
   }
-  .contact-box h2{margin-top:0;}
-  .contact-box a{font-family:'Baloo 2',sans-serif;font-weight:700;}
+  .contact-box h2{margin-top:0;color:var(--purple-light);}
+  .contact-box p{color:rgba(255,255,255,0.75);}
+  .contact-box a{font-family:'Baloo 2',sans-serif;font-weight:700;color:#fff;}
 
-  footer{background:var(--verde-mais-escuro);padding:36px 0;margin-top:20px;}
+  footer{background:var(--charcoal);padding:36px 0;margin-top:20px;}
   .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
-  footer .logo{font-size:19px;}
-  .footer-logo{height:44px;}
-  footer p{font-size:13px;color:rgba(255,248,234,0.55);margin:0;}
-  footer a{color:rgba(255,248,234,0.75);}
+  .footer-logo{height:60px;box-shadow:0 4px 14px rgba(0,0,0,0.35),0 0 0 2px rgba(255,255,255,0.25);}
+  footer p{font-size:13px;color:rgba(255,255,255,0.5);margin:0;}
+  footer a{color:rgba(255,255,255,0.75);}
 
   @media (max-width:640px){
     .footer-inner{flex-direction:column;align-items:flex-start;}
@@ -155,7 +155,7 @@
     </ul>
 
     <h2 id="quem-somos">2. O que é o Resgatô</h2>
-    <p>O Resgatô é uma plataforma de relacionamento entre consumidores e empresas locais, operando em modelo <strong>B2B2C</strong>: o uso pelo Consumidor é gratuito; as Empresas parceiras são clientes da Plataforma e podem contratar planos com funcionalidades adicionais. O Resgatô combina três frentes principais: (i) clube de descontos e promoções; (ii) programa de fidelidade digital; e (iii) descoberta e divulgação de empresas locais através de mapa, busca por segmento e canais de contato direto (WhatsApp e Instagram).</p>
+    <p>O Resgatô é uma plataforma de relacionamento entre consumidores e empresas locais, operando em modelo <strong>B2B2C</strong>: o uso pelo Consumidor é gratuito; as Empresas parceiras são clientes da Plataforma e podem contratar planos com funcionalidades adicionais. O Resgatô combina três frentes principais: (i) clube de descontos e promoções; (ii) programa de fidelidade digital; e (iii) descoberta e divulgação de empresas locais através de mapa, busca por segmento e canais de contato direto (telefone, WhatsApp e Instagram).</p>
     <p>O Resgatô atua como intermediário tecnológico entre consumidores e empresas parceiras. Não somos parte nas relações de consumo, compra e venda, prestação de serviço ou fidelização firmadas diretamente entre o Consumidor e a Empresa parceira, e não respondemos pela qualidade, quantidade, entrega, garantia ou cumprimento dos produtos, serviços e benefícios anunciados pelas Empresas parceiras.</p>
 
     <h2 id="cadastro">3. Cadastro e conta</h2>
@@ -163,7 +163,7 @@
     <p>Para se cadastrar, você declara ter capacidade civil plena. Menores de 18 anos somente podem utilizar a Plataforma com autorização e supervisão de responsável legal, quando aplicável.</p>
 
     <h2 id="consumidor">4. Uso pelo consumidor</h2>
-    <p>O Consumidor pode, gratuitamente: visualizar empresas próximas em um mapa; buscar empresas por segmento (restaurantes, salões, pet shops, academias, lojas, clínicas, serviços automotivos, entre outros); visualizar promoções, descontos e sorteios ativos; acompanhar cartões de fidelidade e o progresso em cada um deles; e acessar diretamente os canais de contato (WhatsApp, Instagram, Facebook) de cada Empresa parceira.</p>
+    <p>O Consumidor pode, gratuitamente: visualizar empresas próximas em um mapa; buscar empresas por segmento (restaurantes, salões, pet shops, academias, lojas, clínicas, serviços automotivos, entre outros); visualizar promoções, descontos e sorteios ativos; acompanhar cartões de fidelidade e o progresso em cada um deles; e acessar diretamente os canais de contato (telefone, WhatsApp, Instagram) de cada Empresa parceira.</p>
     <p>As regras de cada Benefício (valor, vigência, condições de acúmulo e resgate) são definidas por cada Empresa parceira e podem ser alteradas ou encerradas por ela a qualquer momento, sem prévio aviso ao Resgatô, respeitadas as condições já adquiridas pelo Consumidor até a alteração.</p>
 
     <h2 id="empresa">5. Uso pela empresa parceira</h2>
@@ -175,7 +175,7 @@
     <p>Eventuais divergências, erros de registro ou disputas sobre um Resgate específico devem ser resolvidas diretamente entre Consumidor e Empresa parceira. O Resgatô pode, mas não é obrigado a, auxiliar na mediação de conflitos.</p>
 
     <h2 id="planos">7. Planos, preços e pagamentos</h2>
-    <p>O uso da Plataforma pelo Consumidor é gratuito e permanece assim. As Empresas parceiras podem aderir a um plano básico gratuito ou a planos pagos com funcionalidades avançadas (como analytics, comunicação direta com clientes e múltiplos benefícios simultâneos). Valores, formas de pagamento e condições comerciais dos planos pagos são informados no momento da contratação e podem ser reajustados mediante aviso prévio.</p>
+    <p>O uso da Plataforma pelo Consumidor é gratuito e permanece assim. As Empresas parceiras podem aderir a um pacote inicial gratuito para testar a plataforma ou a planos pagos com funcionalidades avançadas (como analytics, comunicação direta com clientes e múltiplos benefícios simultâneos). Valores, formas de pagamento e condições comerciais dos planos pagos são informados no momento da contratação e podem ser reajustados mediante aviso prévio.</p>
     <p>O não pagamento de plano contratado pode acarretar a suspensão das funcionalidades adicionais e/ou do perfil da Empresa parceira na Plataforma, sem prejuízo de outras medidas cabíveis.</p>
 
     <h2 id="conduta">8. Regras de conduta</h2>
