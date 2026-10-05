@@ -55,11 +55,9 @@ var RESGATO = {
 
   /* ---------- teste A/B do título do hero ----------
      ?v=a ou ?v=b força a variante; senão sorteia e lembra no navegador. */
-  var abVariant = (params.get('v') || local('ab_hero') || (Math.random() < 0.5 ? 'a' : 'b')).toLowerCase();
-  if (abVariant !== 'a' && abVariant !== 'b') abVariant = 'a';
-  local('ab_hero', abVariant);
-  $$('[data-ab-hero]').forEach(function (el) { el.hidden = el.getAttribute('data-ab-hero') !== abVariant; });
-  track('ab_exposure', { experiment: 'hero_headline', variant: abVariant });
+  // Título único: "Descubra lugares. Aproveite benefícios. Valorize o comércio local."
+  // Para voltar a testar dois títulos, recrie dois <h1 data-ab-hero="a|b"> e sorteie a variante aqui.
+  var abVariant = 'descubra-lugares';
 
   /* ---------- links de loja ---------- */
   var hasIOS = !!RESGATO.APP_STORE_URL, hasAndroid = !!RESGATO.GOOGLE_PLAY_URL;
