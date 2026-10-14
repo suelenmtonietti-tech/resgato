@@ -5,8 +5,8 @@
    (nenhum link quebrado aparece para o visitante).
    ========================================================= */
 var RESGATO = {
-  APP_STORE_URL: '',      // ex.: 'https://apps.apple.com/br/app/...'  (app iOS já aprovado — cole o link aqui)
-  GOOGLE_PLAY_URL: '',    // ex.: 'https://play.google.com/store/apps/details?id=...'  (quando o Google aprovar)
+  APP_STORE_URL: 'https://apps.apple.com/br/app/resgat%C3%B4/id6802770141',
+  GOOGLE_PLAY_URL: 'https://play.google.com/store/apps/details?id=br.com.resgatoapp.www',
   WHATSAPP_NUMBER: '',    // só números, com DDI+DDD. ex.: '5544999999999'
   WHATSAPP_MESSAGE: 'Olá, conheci o Resgatô pela landing page e gostaria de saber como minha empresa pode participar.',
 
